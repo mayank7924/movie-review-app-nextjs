@@ -1,0 +1,66 @@
+.section {
+  margin: 5rem auto;
+  width: 95%;
+  max-width: 27rem;
+  border-radius: 16px;
+  background-color: #d5bdaf;
+  padding: 2rem;
+  text-align: center;
+}
+
+.formControl {
+  margin-bottom: 0.5rem;
+}
+
+.formControl input {
+  font: inherit;
+  background-color: #fffdf9;
+  color: #444;
+  border-radius: 5px;
+  border: 1px solid #fffdf9;
+  width: 100%;
+  text-align: left;
+  padding: 0.2rem;
+}
+
+.formControl label {
+  display: block;
+  color: #6c584c;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.actions {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: #432818;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+}
+
+.actions button:hover {
+  background-color: #432818;
+  border-color: #432818;
+}
+
+.actions .toggle {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0.15rem 1.5rem;
+}
+
+.actions .toggle:hover {
+  background-color: transparent;
+  color: #00094e;
+}
