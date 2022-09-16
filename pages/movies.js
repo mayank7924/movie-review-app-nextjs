@@ -1,3 +1,5 @@
+const createConnection = require("../src/dbConnection");
+const Movie = require("../models/movie");
 import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -51,11 +53,11 @@ export default function Movies({ movies }) {
 }
 
 export async function getStaticProps() {
-  const result = await fetch("http://localhost:3000/api/movies");
-  const movies = await result.json();
+  await createConnection();
+  const movies = await Movie.find();
   return {
     props: {
-      movies,
+      movies: JSON.parse(JSON.stringify(movies)),
     },
     revalidate: 3600, //in seconds
   };

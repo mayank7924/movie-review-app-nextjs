@@ -4,6 +4,7 @@ import { useSession, signOut } from "next-auth/react";
 import classes from "./Appbar.module.css";
 import { useDispatch } from "react-redux";
 import { setDetails } from "../store/userDetailsSlice";
+import Typography from "@mui/material/Typography";
 
 export default function AppBar() {
   const { data: session, status } = useSession();
@@ -22,7 +23,7 @@ export default function AppBar() {
     <header className={classes.header}>
       <Link href="/">
         <a>
-          <div className={classes.title}>Movie Review App </div>
+          <div className={classes.title}>Movie Review App <Typography variant="caption">v{process.env.APP_VERSION}</Typography></div>
         </a>
       </Link>
       <nav>
