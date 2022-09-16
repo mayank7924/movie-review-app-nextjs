@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
-import classes from "./Appbar.module.css";
+import classes from "./AppBar.module.css";
 import { useDispatch } from "react-redux";
 import { setDetails } from "../store/userDetailsSlice";
 import Typography from "@mui/material/Typography";

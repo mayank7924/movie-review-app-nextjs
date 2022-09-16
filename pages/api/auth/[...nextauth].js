@@ -1,6 +1,6 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import NextAuth from "next-auth"
-import User from "../../../models/User"
+import User from "../../../models/user"
 import createConnection from "../../../src/dbConnection";
 import createHash from "../../../src/hash";
 
